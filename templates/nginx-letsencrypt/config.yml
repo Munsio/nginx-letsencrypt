@@ -1,0 +1,8 @@
+name: Nginx + Letsencrypt Proxy # Name of the Catalog Entry
+description: |
+  # An Nginx proxy secured with Letsencrypt
+version: 0.3.0 # Version of the Catalog to be used
+category: Rancher Services # Category to be used for searching catalog entries
+maintainer: Martin Treml <github@r2pi.net> # The maintainer of the catalog entry
+license: The MIT License # The license
+projectURL: https://github.com/Munsio/rancher-cattle-nginx-letsencrypt # A URL related to the catalog entry
