@@ -3,7 +3,6 @@
   version: "v0.0.1-rancher1" # Version of the versioned template of the Catalog Entry
   description: "An nginx letsencrypt proxy based on JrCs letsencrypt companion and jwilder's docker-gen " # Description of the versioned template of the Catalog Entry
   uuid: nginx-letsencrypt-1 # Unique identifier to be used for upgrades. Please see note.
-  minimum_rancher_version: 1.1.0 # The minimum version of Rancher that supports the template
   questions: #Used to request user input for configuration options
 	- variable: base_path
 	  description: "The base path - without trailing slash"
@@ -11,3 +10,10 @@
 	  required: true
 	  default: "/storage/docker_data/proxy"
 	  type: "string"
+
+nginx:
+  scale: 1
+letsencrypt:
+  scale: 1
+nginx-gen:
+  scale: 1
