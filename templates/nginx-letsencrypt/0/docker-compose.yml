@@ -33,7 +33,5 @@ nginx-gen:
     - /var/run/docker.sock:/tmp/docker.sock:ro
   volumes_from:
     - nginx
-  depends_on:
-    - letsencrypt
   command: "-config /etc/nginx/docker-gen/docker-gen.cfg"
   stdin_open: true
